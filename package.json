@@ -1,0 +1,14 @@
+{
+  "name": "disease-detector-app",
+  "version": "1.0.0",
+  "description": "Sistem Deteksi Penyakit Berbasis NLP (Bahasa Indonesia)",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && python run.py",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

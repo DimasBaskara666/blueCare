@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
 from .nlp_engine import process_symptoms
-from .predictor import predict_disease
-from .chatbot import get_chatbot_response
+from .core.predictor import predict_disease
+from .core.chatbot import get_chatbot_response
 import traceback
 import logging
 

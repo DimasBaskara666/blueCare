@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import SymptomInput from "@/components/SymptomInput";
-import Chatbot from "@/components/Chatbot";
-import ResultDisplay from "@/components/ResultDisplay";
+import SymptomInput from "@/components/prediction/SymptomInput";
+import Chatbot from "@/components/chatbot/Chatbot";
+import ResultDisplay from "@/components/prediction/ResultDisplay";
 
 export default function Home() {
   const [predictions, setPredictions] = useState<any[]>([]);
